@@ -23,6 +23,7 @@
   "devDependencies": {
     "gulp-rename": "^1.2.0",
     "gulp": "^3.5.6",
-    "gulp-jade": "^0.4.2"
+    "gulp-jade": "^0.4.2",
+    "gulp-sass": "^0.7.1"
   }
 }

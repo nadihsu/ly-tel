@@ -93,55 +93,38 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 #topbar .logo:hover {
   color: #878585;
 }
-#topbar .social-btn-group {
-  overflow: hidden;
-  border: none;
-  padding-top: 23px;
-  z-index: 9999;
-  float: right;
-  display: inline-flex;
-  height: inherit;
-}
-#topbar .fb-btn, #topbar .tw-btn, #topbar .gp-btn {
-  height: 21px;
-}
-#topbar .fb-btn {
-  width: 130px;
-  -webkit-filter: grayscale(100%) contrast(60%);
-  -moz-filter: grayscale(100%) contrast(60%);
-  filter: grayscale(100%) contrast(60%);
-}
-#topbar .tw-btn {
-  width: 80px;
-  margin-right: 14px;
-  -webkit-filter: grayscale(100%) contrast(60%);
-  -moz-filter: grayscale(100%) contrast(60%);
-  filter: grayscale(100%) contrast(60%);
-}
-#topbar .gp-btn {
-  width: 100px;
-  margin-right: 23px;
-  -webkit-filter: grayscale(100%) contrast(60%);
-  -moz-filter: grayscale(100%) contrast(60%);
-  filter: grayscale(100%) contrast(60%);
-}
-#topbar .beta-string {
-  margin: 16px 0 0 32px;
-  padding: 5px 10px;
-  border: 1px solid rgba(217, 83, 79, 0.4);
-  border-radius: 3px;
-}
 
 /* main */
 
 #main {
 
+  #text-instruction {
+    display: inline;
+  }
+
+  #img-instruction {
+    display: none;
+  }
+
+  
+
   @media only screen and (min-width: 760px){
     padding-left: 22em;
     margin-top: 24px;
+    #text-instruction {
+      display: none;
+    }
+
+    #img-instruction {
+      display: inline;
+    }
   }
   // width: 51em;
 }
+
+
+
+
 /*main .head {
   font-size: 50px;
 }
@@ -180,7 +163,9 @@ main .md h2 {
 }
 main .md p {
   font-size: 17px;
-}*/
+}
+
+*/
 
 
 
