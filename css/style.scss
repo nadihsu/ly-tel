@@ -35,8 +35,22 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 }
 
 #results article{
-    padding: 0.5em 0;
-  @media only screen and (max-width: 760px){
+  padding: 0.5em 0;
+
+  @media only screen and (max-width: 767px){
+    h1, h2{
+      // Mobile view: put h1, h2 in a line
+      display: inline-block;
+      padding-left: 10px;
+      vertical-align: middle;
+      margin: 0;
+      line-height: 1.2;
+    }
+    header{
+      // Add margin in mobile view
+      margin-bottom: 0.5em;
+    }
+
     &:before{
       display:block !important;
     }
@@ -47,12 +61,6 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
     }
     header{
       width:80% !important;
-      h1{
-        width:50%;
-      }
-      h2{
-        width:50%;
-      }
     }
   }
 }
@@ -63,6 +71,18 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 
 #results .contact{
   margin-top: 0.5em;
+
+  .glyphicon-earphone{
+    color: #fff;
+    background: #f00;
+    border-radius: 100px;
+    display: inline-block;
+    padding: 0.25em;
+  }
+
+  .tel{
+    font-size: 16px;
+  }
 }
 #results .contact:first-child{
   margin-top: 0em;
@@ -75,24 +95,18 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 }
 
 #topbar {
-  background: #3a3939;
-  text-align: center;
-  .topbar-content{
-    padding: 24px 0;
-  }
+  background: #ffa100;
+  padding: 0.75em;
 }
 #topbar .logo {
-  font-size: 30px;
-  @media only screen and (max-width: 760px){
-    font-size: 25px;
-  }
-  line-height: 1;
+  font-size: 24px;
+  color: #2b2b2b;
+  line-height: 1.2;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #FFF;
 }
 #topbar .logo:hover {
-  color: #878585;
+  color: lighten(#2b2b2b, 10%);
 }
 
 /* main */
@@ -110,7 +124,7 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
     }
   }
 
-  @media only screen and (min-width: 760px){
+  @media only screen and (min-width: 768px){
     clear: none;
     padding-left: 22em;
     margin-top: 24px;

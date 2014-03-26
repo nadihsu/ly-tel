@@ -56,6 +56,27 @@
     .sidebar.affix {
       position: static !important; } }
 
+.bottombar {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.75);
+  text-align: center; }
+  .bottombar ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0; }
+  .bottombar a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #444;
+    padding: 1em 0; }
+  .bottombar .glyphicon {
+    font-size: 150%; }
+
 .centered {
   float: none;
   margin: 0 auto; }
@@ -96,23 +117,35 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
 
 #results article {
   padding: 0.5em 0; }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 767px) {
+    #results article h1, #results article h2 {
+      display: inline-block;
+      padding-left: 10px;
+      vertical-align: middle;
+      margin: 0;
+      line-height: 1.2; }
+    #results article header {
+      margin-bottom: 0.5em; }
     #results article:before {
       display: block !important; }
     #results article div.col-xs-1 img {
       display: inline-block; }
     #results article header {
-      width: 80% !important; }
-      #results article header h1 {
-        width: 50%; }
-      #results article header h2 {
-        width: 50%; } }
+      width: 80% !important; } }
 
 #results article:nth-child(2n) {
   background: #eee; }
 
 #results .contact {
   margin-top: 0.5em; }
+  #results .contact .glyphicon-earphone {
+    color: #fff;
+    background: #f00;
+    border-radius: 100px;
+    display: inline-block;
+    padding: 0.25em; }
+  #results .contact .tel {
+    font-size: 16px; }
 
 #results .contact:first-child {
   margin-top: 0em; }
@@ -124,23 +157,18 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
   font-weight: bold; }
 
 #topbar {
-  background: #3a3939;
-  text-align: center; }
-  #topbar .topbar-content {
-    padding: 24px 0; }
+  background: #ffa100;
+  padding: 0.75em; }
 
 #topbar .logo {
-  font-size: 30px;
-  line-height: 1;
+  font-size: 24px;
+  color: #2b2b2b;
+  line-height: 1.2;
   letter-spacing: 1px;
-  text-decoration: none;
-  color: #FFF; }
-  @media only screen and (max-width: 760px) {
-    #topbar .logo {
-      font-size: 25px; } }
+  text-decoration: none; }
 
 #topbar .logo:hover {
-  color: #878585; }
+  color: #454545; }
 
 /* main */
 #main {
@@ -151,7 +179,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
     display: none; }
     #main #img-instruction img {
       max-width: 100%; }
-  @media only screen and (min-width: 760px) {
+  @media only screen and (min-width: 768px) {
     #main {
       clear: none;
       padding-left: 22em;
@@ -160,6 +188,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
         display: none; }
       #main #img-instruction {
         display: block; } }
+
+#map {
+  width: 100%;
+  height: 500px; }
 
 /*main .head {
   font-size: 50px;
