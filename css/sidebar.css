@@ -1,90 +1,78 @@
 /* side bar */
 @media only screen and (max-width: 760px) {
-  /* line 7, sidebar.scss */
   ul#links {
-    background-color: yellow;
-  }
-}
+    background-color: yellow; } }
 
-/* line 12, sidebar.scss */
 .sidebar {
   margin-left: 42px;
   margin-top: 44px;
   float: left;
-  text-decoration: none;
-}
-@media only screen and (max-width: 760px) {
-  /* line 12, sidebar.scss */
-  .sidebar {
-    padding: 0 16px;
-    margin-left: 0;
-  }
-}
-/* line 21, sidebar.scss */
-.sidebar h2 {
-  margin-top: 5px;
-}
+  text-decoration: none; }
+  @media only screen and (max-width: 760px) {
+    .sidebar {
+      padding: 0 16px;
+      margin-left: 0; } }
+  .sidebar h2 {
+    margin-top: 5px; }
 
-/* line 25, sidebar.scss */
 .sidebar ul {
   margin-bottom: 21px;
   list-style-position: inside;
   font-size: 20px;
   line-height: 1.5;
-  padding-bottom: 3px;
-}
-/* line 31, sidebar.scss */
-.sidebar ul a {
-  color: #444;
-}
+  padding-bottom: 3px; }
+  .sidebar ul a {
+    color: #444; }
 
-/* line 35, sidebar.scss */
 .sidebar li.title {
   font-size: 20px;
   padding-bottom: 3px;
   padding-top: 9px;
-  list-style-type: none;
-}
-/* line 40, sidebar.scss */
-.sidebar li.title a {
-  color: #444;
-}
+  list-style-type: none; }
+  .sidebar li.title a {
+    color: #444; }
 
-/* line 44, sidebar.scss */
 .sidebar li.title .small {
   font-size: 15px;
-  padding-left: 5px;
-}
+  padding-left: 5px; }
 
-/* line 48, sidebar.scss */
 .sidebar li {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
-/* line 51, sidebar.scss */
 .sidebar li a {
-  color: #777;
-}
+  color: #777; }
 
-/* line 54, sidebar.scss */
 .sidebar li a:hover {
   text-decoration: none;
-  color: red;
-}
+  color: red; }
 
-/* line 58, sidebar.scss */
 .sidebar li:not(.title) {
   margin-left: 7px;
-  padding-top: 3px;
-}
+  padding-top: 3px; }
 
-/* line 63, sidebar.scss */
 .sidebar.affix {
-  top: 0;
-}
-@media only screen and (max-width: 760px) {
-  /* line 63, sidebar.scss */
-  .sidebar.affix {
-    position: static !important;
-  }
-}
+  top: 0; }
+  @media only screen and (max-width: 760px) {
+    .sidebar.affix {
+      position: static !important; } }
+
+.bottombar {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.75);
+  text-align: center; }
+  .bottombar ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0; }
+  .bottombar a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #444;
+    padding: 1em 0; }
+  .bottombar .glyphicon {
+    font-size: 150%; }

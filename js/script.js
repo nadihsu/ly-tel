@@ -134,19 +134,19 @@ function showResults(){
         html +=   '</header>';
 
         var contact = val['contact'];
-        html += '<main class="col-xs-8">';
+        html += '<main class="col-xs-12 col-sm-8">';
         $.each(contact, function (key, val) {
             key = $.trim(key);
             if(key){
                 html = html + '<div class="contact"><h3>' + key + '</h3>';
                 if (val['phone'] != undefined){
-                    html = html + '電話：<a href="tel:' + val['phone'] + '">' + val['phone'] + '</a><br>';
+                    html = html + '<span class="glyphicon glyphicon-earphone"></span>　<a class="tel" href="tel:' + val['phone'] + '">' + val['phone'] + '</a><br>';
                 }
                 if (val['address'] != undefined){
-                    html = html + '地址：<a href="http://maps.google.com.tw/?q=' + val['address'] + '">' + val['address'] + '</a>';
+                    html = html + '<small>地址　<a href="http://maps.google.com.tw/?q=' + val['address'] + '">' + val['address'] + '</a></small>';
                 }
                 if (val['fax'] != undefined){
-                    html = html + '<br>傳真：<a href="fax:' + val['fax'] + '">' + val['fax'] + '</a>';
+                    html = html + '<br><small>傳真　<a href="fax:' + val['fax'] + '">' + val['fax'] + '</a></small>';
                 }
                 html = html + '</div>';
             }
