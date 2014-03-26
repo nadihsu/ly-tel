@@ -16,6 +16,7 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 .wrapper {
   margin: 0 auto;
   max-width: 1300px;
+  overflow-x: hidden;
 }
 
 .loading{
@@ -97,26 +98,27 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 /* main */
 
 #main {
-
+  clear: both;
   #text-instruction {
-    display: inline;
+    display: block;
   }
 
   #img-instruction {
     display: none;
+    img {
+      max-width: 100%;
+    }
   }
 
-  
-
   @media only screen and (min-width: 760px){
+    clear: none;
     padding-left: 22em;
     margin-top: 24px;
     #text-instruction {
       display: none;
     }
-
     #img-instruction {
-      display: inline;
+      display: block;
     }
   }
   // width: 51em;
@@ -234,7 +236,7 @@ main .md p {
   display: inline-block;
 }
   #footer .copyright span {
-    margin-left: 20px;
+
   }
   #footer .footer-logo {
     margin-bottom: 0;
