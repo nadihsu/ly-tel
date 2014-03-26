@@ -55,3 +55,24 @@
   @media only screen and (max-width: 760px) {
     .sidebar.affix {
       position: static !important; } }
+
+.bottombar {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.75);
+  text-align: center; }
+  .bottombar ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0; }
+  .bottombar a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #444;
+    padding: 1em 0; }
+  .bottombar .glyphicon {
+    font-size: 150%; }

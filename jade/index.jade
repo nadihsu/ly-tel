@@ -17,6 +17,20 @@ html
       .sidebar
         include ./switch
 
+      .bottombar.visible-xs: .container: ul.row
+        li.col-xs-4: a(href='#teach')
+          span.glyphicon.glyphicon-bullhorn
+          br
+          | 三動作
+        li.col-xs-4: a(href='#ly')
+          span.glyphicon.glyphicon-th-list
+          br
+          | 名單列表
+        li.col-xs-4: a(href='#ly-map')
+          span.glyphicon.glyphicon-map-marker
+          br
+          | 地圖列表
+
       main#main.container
         include:md ../md/step.md
 
@@ -47,6 +61,9 @@ html
                 | （X11）授權。
                 br
                 | 三動作圖片：三動作護台灣由 @ChangeLin 製作，以創用CC 姓名標示-非商業性 4.0 國際 授權條款釋出。
+                br
+                | Icons:
+                a(href='http://glyphicons.com/') Glyphicons
 
 
 
