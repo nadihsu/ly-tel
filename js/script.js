@@ -162,6 +162,6 @@ $.getJSON(url, function (data) {
 });
 
 $('.sidebar').affix({
-    offset: {top: 100}
+    offset: {top: 80}
 });
 }(window, document, jQuery));
